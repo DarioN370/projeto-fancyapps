@@ -4,9 +4,15 @@
 
 
 *{
-    font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    background: black;
+    background: var(--cor-secundaria);
+}
+
+:root{
+    --fonte-principal: "Poppins", sans-serif;
+
+    --cor-principal: antiquewhite;
+    --cor-secundaria: black;
 }
 
 ul{
@@ -21,7 +27,7 @@ ul{
 
 #container h2{
     text-align: center;
-    color: antiquewhite;
+    color: var(--cor-principal);
 }
 
 #galeria{
