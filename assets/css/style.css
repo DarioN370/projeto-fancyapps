@@ -6,7 +6,6 @@
 *{
     font-family: "Poppins", sans-serif;
     box-sizing: border-box;
-    background: black;
 }
 
 ul{
@@ -21,7 +20,7 @@ ul{
 
 #container h2{
     text-align: center;
-    color: antiquewhite;
+    color: black;
 }
 
 #galeria{
@@ -30,8 +29,15 @@ ul{
     gap: 10px;
 }
 
-#galeria img{
-    flex: 1;
+#galeria a{
+    flex: auto;
     height: 250px;
+}
+
+#galeria a img{
+    object-fit: cover; /*ele garante que a imagem vai ocupar 100% da tag "a" usar quando estiver dentro da tag "a"*/
+    width: 100%;
+    height: 100%;
+    vertical-align: middle; /*faz um cover a partir do meio*/
     border-radius: 4px;
 }
